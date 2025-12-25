@@ -35,7 +35,7 @@ const Dashboard = () => {
          try {
           event.preventDefault()
           const {data} = await api.post('/api/resumes/create',{title},{headers:{
-            Authorization:token
+          Authorization: `Bearer ${token}`
           }})
           setAllResumes([...allResumes,data.resume])
           setTitle('');
