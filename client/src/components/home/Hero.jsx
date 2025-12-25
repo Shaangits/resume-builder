@@ -8,11 +8,11 @@ const Hero = () => {
      const [menuOpen, setMenuOpen] = React.useState(false);
 
     const logos = [
-        'https://saasly.prebuiltui.com/assets/companies-logo/instagram.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/framer.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/microsoft.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/huawei.svg',
-        'https://saasly.prebuiltui.com/assets/companies-logo/walmart.svg',
+        'https://cdn.simpleicons.org/instagram',
+        'https://cdn.simpleicons.org/framer',
+        'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg',
+        'https://cdn.simpleicons.org/huawei',
+        
     ]
   return (
      <>
