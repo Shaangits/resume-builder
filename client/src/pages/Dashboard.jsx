@@ -35,7 +35,7 @@ const Dashboard = () => {
          try {
           event.preventDefault()
           const {data} = await api.post('/api/resumes/create',{title},{headers:{
-          Authorization: `Bearer ${token}`
+            Authorization: `Bearer ${token}`
           }})
           setAllResumes([...allResumes,data.resume])
           setTitle('');
@@ -135,10 +135,12 @@ const Dashboard = () => {
     
 
   }
- useEffect(()=>{
-  loadAllResumes()
-   
- },[])
+useEffect(() => {
+  if (token) {
+    loadAllResumes();
+  }
+}, [token]);
+
   return (
     <div>
         <div className='max-w-7xl mx-auto px-4 py-8'>
